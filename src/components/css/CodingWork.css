@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff7e5f, #feb47b);
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.8); /* Similar background color */
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: transform 0.3s, background 0.3s; /* Added background transition */
+  width: calc(100% - 40px); /* Adjusted width */
+  max-width: 400px; /* Added max-width */
+  margin: 0 auto 20px; /* Centered and added bottom margin */
+}
+
+.project:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff7e5f, #feb47b); /* Gradient background on hover */
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.project p {
+  color: #666;
+}
+
+/* Additional styles for GitHub link and background image */
+
+.project .github-link {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.project .github-link a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.project .background-image {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.project .background-image img {
+  max-width: 100%;
+  height: auto;
+}
+.footer {
+  position: fixed; /* Fixed position */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Full width */
+  background-color: #333; /* Example background color */
+  color: white; /* Example text color */
+  padding: 20px; /* Example padding */
+}

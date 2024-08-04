@@ -1,0 +1,68 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  padding: 0 20px; /* Increase padding */
+}
+
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  justify-content: center;
+
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff6f61;
+}
+
+.resume-download {
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-download:hover {
+  background-color: #ff8a7b;
+}
+
+/* AI Navbar Styling */
+.ai-icon {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.ai-text {
+  color: #ff6f61;
+  font-weight: bold;
+}

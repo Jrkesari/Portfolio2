@@ -1,0 +1,53 @@
+/* Styling for the Coding Work component */
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff7e5f, #feb47b);
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: transform 0.3s, background 0.3s;
+  width: calc(100% - 40px);
+  max-width: 400px;
+  margin: 0 auto 20px;
+  overflow: hidden; /* Ensure the content stays within the rounded border */
+}
+
+.photo:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #ff7e5f, #feb47b);
+}
+
+.photo h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.photo p {
+  color: #666;
+}
+
+/* Style the image to be round */
+.photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Make the image round */
+}

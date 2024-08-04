@@ -1,0 +1,101 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.home-container {
+  background: url('./Image/3d-render-boy-with-orange-tshirt-sunglasses.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  transition: transform 0.5s ease;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+.content {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.left .content {
+  transform: translateX(-100%);
+}
+
+.right .content {
+  transform: translateX(100%);
+}
+
+.center .content {
+  transform: translateY(20%);
+}
+
+.animate .content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate .center .content {
+  transform: translateY(0);
+}
+
+/* Add color gradient on hover */
+.section:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Image/3d-render-boy-with-orange-tshirt-sunglasses.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.about-me {
+  background-color: rgba(240, 240, 240, 0.8); /* Semi-transparent background */
+}
+
+.roadmap {
+  background-color: rgba(42, 9, 9, 0.8); /* Semi-transparent background */
+}
+
+.coding-work {
+  background-color: rgba(192, 192, 192, 0.8); /* Semi-transparent background */
+}
+
+.photographs {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+}
+
+.project {
+  background-color: rgba(160, 160, 160, 0.8); /* Semi-transparent background */
+}
+
+.tile {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+}
+
+.animated-image .content {
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+/* Ensure photographs and project parts are visible */
+.photographs .content,
+.project .content {
+  color: black; /* Change text color to black or any other color to ensure visibility */
+}
